@@ -14,10 +14,10 @@ app.set('io', io);
 /* Criando a conexão por websocket */
 io.on('connection', function(socket){
 
-	console.log('Um usuário logou');
+	console.log('Um viadinho logou');
 	socket.on('disconnect', function(){
 
-		console.log('Um usuário desconectou');
+		console.log('Um viadinho desconectou');
 	});
 
 	socket.on('msgParaServidor', function(data){
